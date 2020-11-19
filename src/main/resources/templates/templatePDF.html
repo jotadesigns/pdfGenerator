@@ -2,6 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}"/>
+<meta charset="UTF-8"/>
 </head>
 <body>
 	<div>
@@ -15,7 +16,7 @@
 		  <tr>	  	
 		  	<td colspan="3" class="header">
 		  		<p>Retirada de efectivo en oficina de Correos</p>	
-	  			<p class="importe">-250,00�</p>
+	  			<p class="importe">-250,00€</p>
 	  		</td>
 		  </tr>
 		  
@@ -27,63 +28,51 @@
 	      		</th>
 	      		<th>
 	      			<tr>
-	      				<p class="codigo">C�digo: 573346998</p>
+	      				<p class="codigo">Código: 573346998</p>
 	      			</tr>
 	      			<tr>
-	      				<p>Dispones de 7 d�as naturales para ejecutar esta operaci�n en una oficina de Correos. Tienes que presentar este C�digo QR e identificarte con un documento acreditativo.</p>
+	      				<p>Dispones de 7 días naturales para ejecutar esta operación en una oficina de Correos. Tienes que presentar este Código QR e identificarte con un documento acreditativo.</p>
 	      			</tr>
 		    	</th>
 		    </td>
 		  </tr>
-		  
+		  <!--  TITLE BOXES -->
+		  <tr class="title-boxes">
+  	  		<td colspan="3">
+				<p>Datos del beneficiario</p>
+			</td>
+  	  	  </tr>
 		  <!--  BOXES -->
-		  <tr>
+		  <tr class="boxes">
 		  	<td>
 	  			<p class="key">Cuenta origen:</p>
-	  			<p>Cuenta Zero 1|2|3</p>
+	  			<p class="value">Cuenta Zero 1|2|3</p>
 	  		</td> 
     		<td>
-    			<p class="key">Cuenta origen:</p>
-	  			<p>Cuenta Zero 1|2|3</p>
+    			<p class="key">Fecha de solicitud:</p>
+	  			<p class="value">15/11/2019</p>
     		</td> 
 	    	<td>
-	    		<p class="key">Cuenta origen:</p>
-	  			 <p>Cuenta Zero 1|2|3</p>
+	    		<p class="key">Disponible hasta:</p>
+	  			<p class="value">22/11/2019</p>
 	    	</td>
-		</tr>
-		<tr>
-		  	<td>
-	  			<p class="key">Cuenta origen:</p>
-	  			<p>Cuenta Zero 1|2|3</p>
-	  		</td> 
-    		<td>
-    			<p class="key">Cuenta origen:</p>
-	  			<p>Cuenta Zero 1|2|3</p>
-    		</td> 
-	    	<td>
-	    		<p class="key">Cuenta origen:</p>
-	  			 <p>Cuenta Zero 1|2|3</p>
-	    	</td>
-		</tr>
-		<tr>
-		  	<td>
-	  			<p class="key">Cuenta origen:</p>
-	  			<p>Cuenta Zero 1|2|3</p>
-	  		</td> 
-    		<td>
-    			<p class="key">Cuenta origen:</p>
-	  			<p>Cuenta Zero 1|2|3</p>
-    		</td> 
-	    	<td>
-	    		<p class="key">Cuenta origen:</p>
-	  			 <p>Cuenta Zero 1|2|3</p>
-	    	</td>
-		</tr>
-  			
-  			<!-- full box  -->
-  			<tr>
-	  	  		<td colspan="3">Deberia ocupar todo</td>
-	  	  	</tr>
+		   </tr>
+ 		   <tr class="boxes">
+  	  		<td colspan="3">
+				<p class="key">
+					<img width="25px" class="correos-icon" th:src="@{/images/correos.png}" src="../public/images/correos.png"/>
+					<span>Oficina de Correos:</span>
+				</p>
+	  			<p class="value">En cualquiera del territorio español</p>
+			</td>
+  	  	   </tr>
+  	  	   <tr class="boxes">
+  	  		<td colspan="3">
+				<p class="key">Comisión:</p>
+	  			<p class="value">1,80€</p>
+	  			<p class="sub-value">Esta comisión se cargará en cuenta, junto con el importe solicitado una vez el dinero. Serán gratuitos las dos primeras operaciones, bien de retirar a ingresar dinero en efectivo a débito, realizadas en un mes en oficinas de Correos situadas en un municipio en el que no haya una oficina ni un agente colaborador de Banco Santander. Puedes consultar estas oficinas en nuestro buscador.</p>
+			</td>
+  	  	   </tr>
 	 
 	  	  
   	  

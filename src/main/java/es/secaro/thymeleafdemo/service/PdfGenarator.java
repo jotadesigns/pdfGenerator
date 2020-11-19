@@ -21,6 +21,7 @@ import org.thymeleaf.spring4.context.SpringWebContext;
 import org.xhtmlrenderer.pdf.ITextRenderer;
 
 import com.lowagie.text.DocumentException;
+import com.lowagie.text.pdf.BaseFont;
 
 @Service
 public class PdfGenarator {
@@ -39,7 +40,7 @@ public class PdfGenarator {
 	String urlBase = "http://localhost:8080";
 
 	public ByteArrayOutputStream createPdf(final String templateName, final Map map, final HttpServletRequest request, final HttpServletResponse response)
-			throws DocumentException {
+			throws DocumentException, IOException {
 
 		logger.debug("Generando informe pdf");
 
@@ -55,7 +56,10 @@ public class PdfGenarator {
 
 			ITextRenderer renderer = new ITextRenderer();
 			renderer.setDocumentFromString(processedHtml, urlBase);
-
+			renderer.getFontResolver().addFont("public/fonts/Lato-Bold.ttf", BaseFont.IDENTITY_H,BaseFont.EMBEDDED);
+			renderer.getFontResolver().addFont("public/fonts/Lato-Light.ttf", BaseFont.IDENTITY_H,BaseFont.EMBEDDED);
+			renderer.getFontResolver().addFont("public/fonts/Lato-Regular.ttf", BaseFont.IDENTITY_H,BaseFont.EMBEDDED);
+			renderer.getFontResolver().addFont("public/fonts/Lato-Semibold.ttf", BaseFont.IDENTITY_H,BaseFont.EMBEDDED);
 			renderer.layout();
 			renderer.createPDF(bos, false);
 			renderer.finishPDF();

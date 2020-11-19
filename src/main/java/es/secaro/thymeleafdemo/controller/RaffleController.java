@@ -1,6 +1,7 @@
 package es.secaro.thymeleafdemo.controller;
 
 import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -54,7 +55,7 @@ public class RaffleController {
 
 	@GetMapping("/raffle/pdf")
 	public ResponseEntity<ByteArrayResource> rafflePDF(@ModelAttribute final Raffle raffle, final HttpServletRequest request,
-			final HttpServletResponse response) throws DocumentException {
+			final HttpServletResponse response) throws DocumentException, IOException {
 
 		List<String> winners = raffle.getWinners();
 

@@ -1,0 +1,75 @@
+body {
+	padding: 0 60px;
+}
+
+.logo {
+	width: 100px;
+	padding: 0px 0px 20px 0px;
+}
+
+
+.tabla {
+	width: 100%;
+	display: inline-table;	
+
+}
+.tabla tr {
+	width:100%;
+}
+
+.header {
+	color:#000000;	
+	font-size:16px;
+	padding: 16px;
+	width: 100%;
+}
+.importe {
+	font-size: 20px;
+	padding: 10px 0px 0px 0px;
+}
+.qr {	
+	color:#000000;
+	font-size:16px;
+	padding:5px 20px 5px 10px;
+	margin:0;
+	text-align: left;
+	background-color: #f8f8f8;	
+	
+}
+
+img.qr-codigo {
+	width: 100px;
+	padding: 10px 30px 10px 0px;
+}
+.codigo {
+	width: 200px;
+	color: #ffffff;
+	padding: 5px 5px 5px 10px;
+	margin-bottom: 10px;
+	background-color: #000000;
+}
+
+
+.tabla {
+	width: 100%;
+  	border-collapse: collapse;
+}
+.tabla, .tabla td {
+	 border: 1px solid #c0c0c0;
+}
+
+
+
+.key {
+	color: #b1b1b1;
+	margin-bottom: 5px;
+}
+
+
+.key_value {
+	
+}
+
+.key_desc {
+	
+}

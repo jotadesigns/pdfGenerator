@@ -1,5 +1,6 @@
 body {
 	padding: 0 60px;
+	font-family: 'Lato';
 }
 
 .logo {
@@ -10,8 +11,7 @@ body {
 
 .tabla {
 	width: 100%;
-	display: inline-table;	
-
+	display: inline-table;	s
 }
 .tabla tr {
 	width:100%;

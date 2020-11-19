@@ -55,7 +55,12 @@ public class PdfGenarator {
 
 			ITextRenderer renderer = new ITextRenderer();
 			renderer.setDocumentFromString(processedHtml, urlBase);
-
+			try {
+                renderer.getFontResolver().addFont("public/fonts/Lato-Regular.ttf", "UTF-8", true);
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
 			renderer.layout();
 			renderer.createPDF(bos, false);
 			renderer.finishPDF();

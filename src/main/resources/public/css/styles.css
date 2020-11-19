@@ -7,11 +7,11 @@ body {
 	padding: 0px 0px 20px 0px;
 }
 
-
 .tabla {
 	width: 100%;
-	display: inline-table;	
-
+	display: inline-table;
+	table-layout: fixed;
+	font-family: 'Lato-Regular';
 }
 .tabla tr {
 	width:100%;
@@ -19,22 +19,26 @@ body {
 
 .header {
 	color:#000000;	
-	font-size:16px;
 	padding: 16px;
 	width: 100%;
+	font-family: 'lato-regular';
+}
+.header p {
+	padding: 5px 0px 0px 0px;
+	margin: 0px;
+	font-family: 'lato-regular';
 }
 .importe {
-	font-size: 20px;
-	padding: 10px 0px 0px 0px;
+	font-size: 30px;
+	font-family: 'lato-regular';
 }
 .qr {	
 	color:#000000;
-	font-size:16px;
-	padding:5px 20px 5px 10px;
+	font-size: 14px;
+	padding:0px 20px 0px 20px;
 	margin:0;
 	text-align: left;
-	background-color: #f8f8f8;	
-	
+	background-color: #f8f8f8;
 }
 
 img.qr-codigo {
@@ -45,14 +49,16 @@ img.qr-codigo {
 	width: 200px;
 	color: #ffffff;
 	padding: 5px 5px 5px 10px;
-	margin-bottom: 10px;
+	margin-bottom: 0px;
 	background-color: #000000;
+	word-wrap: break-word;
+	font-family: 'Lato-Regular';
 }
 
 
 .tabla {
 	width: 100%;
-  	border-collapse: collapse;
+  	border-collapse: collapse;  	
 }
 .tabla, .tabla td {
 	 border: 1px solid #c0c0c0;
@@ -63,6 +69,7 @@ img.qr-codigo {
 .key {
 	color: #b1b1b1;
 	margin-bottom: 5px;
+	font-family: 'Calibri';
 }
 
 

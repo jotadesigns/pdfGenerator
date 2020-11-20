@@ -8,7 +8,6 @@ body {
 	padding: 0px 0px 20px 0px;
 }
 
-
 .tabla {
 	width: 100%;
 	display: inline-table;	
@@ -21,22 +20,25 @@ body {
 
 .header {
 	color:#000000;	
-	font-size:16px;
 	padding: 16px;
 	width: 100%;
+
+}
+.header p {
+	padding: 5px 0px 0px 0px;
+	margin: 0px;
 }
 .importe {
-	font-size: 20px;
-	padding: 10px 0px 0px 0px;
+	font-size: 30px;
+	font-weight: bold;
 }
 .qr {	
 	color:#000000;
-	font-size:16px;
-	padding:5px 20px 5px 10px;
+	font-size: 13px;
+	padding:0px 20px 0px 20px;
 	margin:0;
 	text-align: left;
-	background-color: #f8f8f8;	
-	
+	background-color: #f8f8f8;
 }
 
 img.qr-codigo {
@@ -47,14 +49,17 @@ img.qr-codigo {
 	width: 200px;
 	color: #ffffff;
 	padding: 5px 5px 5px 10px;
-	margin-bottom: 10px;
+	margin-bottom: 0px;
 	background-color: #000000;
+	word-wrap: break-word;
 }
-
+.bigger {
+	font-size: 18px;
+}
 
 .tabla {
 	width: 100%;
-  	border-collapse: collapse;
+  	border-collapse: collapse;  	
 }
 .tabla, .tabla td {
 	 border: 1px solid #c0c0c0;

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>HBS PDF GENERATOR</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+    	body {
+			text-align: center;
+		}
+	    #template_display {
+	    	color: green;
+	    	font-size: 32px;
+	    }
+	    .back {
+	    	margin-top: 75px;
+	    }
+    </style>
+</head>
+<body>
+	<h1 id="template_display" th:text="${templateManager.template}"></h1>
+
+	
+    <form action="#" th:action="@{/download/pdf}" th:object="${templateManager}" method="get">
+    	<input type="hidden" th:value="${templateManager.template}" th:attr="name='template'" />
+    	<input type="submit" value="DESCARGAR PDF" />
+	</form>
+	
+	<div class="back">
+		<a href="/">Volver</a>
+	</div>
+</body>
+</html>

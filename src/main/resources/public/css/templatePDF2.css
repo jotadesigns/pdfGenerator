@@ -1,5 +1,6 @@
 body {
 	padding: 0 60px;
+	font-family: 'Lato';
 }
 
 .logo {
@@ -7,11 +8,12 @@ body {
 	padding: 0px 0px 20px 0px;
 }
 
+
 .tabla {
 	width: 100%;
-	display: inline-table;
+	display: inline-table;	
 	table-layout: fixed;
-	font-family: 'Lato-Regular';
+
 }
 .tabla tr {
 	width:100%;
@@ -19,26 +21,22 @@ body {
 
 .header {
 	color:#000000;	
+	font-size:16px;
 	padding: 16px;
 	width: 100%;
-	font-family: 'lato-regular';
-}
-.header p {
-	padding: 5px 0px 0px 0px;
-	margin: 0px;
-	font-family: 'lato-regular';
 }
 .importe {
-	font-size: 30px;
-	font-family: 'lato-regular';
+	font-size: 20px;
+	padding: 10px 0px 0px 0px;
 }
 .qr {	
 	color:#000000;
-	font-size: 14px;
-	padding:0px 20px 0px 20px;
+	font-size:16px;
+	padding:5px 20px 5px 10px;
 	margin:0;
 	text-align: left;
-	background-color: #f8f8f8;
+	background-color: #f8f8f8;	
+	
 }
 
 img.qr-codigo {
@@ -49,34 +47,43 @@ img.qr-codigo {
 	width: 200px;
 	color: #ffffff;
 	padding: 5px 5px 5px 10px;
-	margin-bottom: 0px;
+	margin-bottom: 10px;
 	background-color: #000000;
-	word-wrap: break-word;
-	font-family: 'Lato-Regular';
 }
 
 
 .tabla {
 	width: 100%;
-  	border-collapse: collapse;  	
+  	border-collapse: collapse;
 }
 .tabla, .tabla td {
 	 border: 1px solid #c0c0c0;
 }
 
+.title-boxes td{
+	padding: 30px 15px 15px 15px;
+}
 
+.title-boxes td p{
+	margin:0;
+	font-weight: bold;
+}
 
-.key {
+.boxes td {
+	padding: 16px;
+}
+
+.boxes td p {
+	margin: 0;
+}
+
+.boxes .key {
 	color: #b1b1b1;
 	margin-bottom: 5px;
-	font-family: 'Calibri';
 }
-
-
-.key_value {
-	
+.boxes .value {
+	font-weight: bold;
 }
-
-.key_desc {
-	
+.boxes .sub-value {
+	margin-top: 5px;
 }

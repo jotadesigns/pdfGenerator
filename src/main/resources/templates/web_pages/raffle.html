@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>HBS PDF GENERATOR</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script>
+    	function selectTemplate(templateNode) {
+    		const template = templateNode.innerHTML;
+    		window.document.getElementById("template").value = template; 
+    		window.document.getElementById("template_display").innerHTML = template; 
+    		return false;
+    	}
+    </script>
+    <style>
+	    h1 {
+	    	color: #ec0000;
+	    	font-size: 35px;
+	    }
+	    #template_display {
+	    	color: green;
+	    	font-size: 24px;
+	    }
+	    .box {
+	    	background-color: gray;
+	    	border-radius: 4px;
+			box-shadow: 1px 2px 2px 0 rgba(213, 213, 213, 0.35);
+			border: solid 1px #dee3e6;
+			transition: .3s all ease-in-out;	
+	    }
+	    .box:hover {
+	    	background-color: red;
+	    	transition: .15s all ease-in-out;
+	    }
+	    .box p {
+	    	padding: 15px 20px;
+		    cursor: pointer;
+		    margin: 0;
+		    color: white;
+		    text-transform: uppercase;
+		    font-weight: bold;
+		    font-size: 20px;
+		    font-family: monospace;
+		    letter-spacing: 3px;
+	    }
+    </style>
+</head>
+<body>
+	<h1>Home Banking PDF Generator</h1>
+	
+	<h2>SELECCIONA UNA PLANTILLA</h2>
+	<section>
+		<div class="box" th:each="template : ${templateManager.templates}">
+			<p onclick="selectTemplate(this);" th:text="${template}"></p>
+		</div>
+	</section>
+	
+	<h2>PLANTILLA SELECCIONADA => <span id="template_display">NINGUNA</span></h2>
+	
+    <form action="#" th:action="@{/download}" th:object="${templateManager}" method="post">
+    	<input type="hidden" id="template" rows="15" cols="50" th:field="*{template}" />
+   		<input type="submit" value="SELECCIONAR" /> 
+    </form>
+</body>
+</html>

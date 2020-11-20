@@ -74,6 +74,10 @@ img.qr-codigo {
 	font-weight: bold;
 }
 
+.boxes.gray-background {
+	background-color: #f8f8f8;
+}
+
 .boxes td {
 	padding: 16px;
 }

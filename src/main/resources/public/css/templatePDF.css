@@ -22,20 +22,19 @@ body {
 	color:#000000;	
 	padding: 16px;
 	width: 100%;
-	font-family: 'lato-regular';
+
 }
 .header p {
 	padding: 5px 0px 0px 0px;
 	margin: 0px;
-	font-family: 'lato-regular';
 }
 .importe {
 	font-size: 30px;
-	font-family: 'lato-regular';
+	font-weight: bold;
 }
 .qr {	
 	color:#000000;
-	font-size: 14px;
+	font-size: 13px;
 	padding:0px 20px 0px 20px;
 	margin:0;
 	text-align: left;
@@ -53,9 +52,10 @@ img.qr-codigo {
 	margin-bottom: 0px;
 	background-color: #000000;
 	word-wrap: break-word;
-	font-family: 'Lato-Regular';
 }
-
+.bigger {
+	font-size: 18px;
+}
 
 .tabla {
 	width: 100%;

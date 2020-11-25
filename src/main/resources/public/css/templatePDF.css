@@ -124,6 +124,9 @@ img.qr-codigo {
 	font-family: 'SantanderTextW05-Italic';
 	color: #444;
 }
+.boxes.lastBoxes td {
+	padding-bottom: 24px;
+}
 
 .tabla-pie {
 	font-family: 'SantanderTextW05-Regular';

@@ -56,10 +56,23 @@ public class PdfGenarator {
 
 			ITextRenderer renderer = new ITextRenderer();
 			renderer.setDocumentFromString(processedHtml, urlBase);
+			// lato
 			renderer.getFontResolver().addFont("public/fonts/Lato-Bold.ttf", BaseFont.IDENTITY_H,BaseFont.EMBEDDED);
 			renderer.getFontResolver().addFont("public/fonts/Lato-Light.ttf", BaseFont.IDENTITY_H,BaseFont.EMBEDDED);
 			renderer.getFontResolver().addFont("public/fonts/Lato-Regular.ttf", BaseFont.IDENTITY_H,BaseFont.EMBEDDED);
 			renderer.getFontResolver().addFont("public/fonts/Lato-Semibold.ttf", BaseFont.IDENTITY_H,BaseFont.EMBEDDED);
+			// headline
+			renderer.getFontResolver().addFont("public/fonts/headline/SantanderHeadlineW05-Bold.ttf", BaseFont.IDENTITY_H,BaseFont.EMBEDDED);
+			renderer.getFontResolver().addFont("public/fonts/headline/SantanderHeadlineW05-BoldIt.ttf", BaseFont.IDENTITY_H,BaseFont.EMBEDDED);
+			renderer.getFontResolver().addFont("public/fonts/headline/SantanderHeadlineW05-Italic.ttf", BaseFont.IDENTITY_H,BaseFont.EMBEDDED);
+			renderer.getFontResolver().addFont("public/fonts/headline/SantanderHeadlineW05-Rg.ttf", BaseFont.IDENTITY_H,BaseFont.EMBEDDED);
+			// text
+			renderer.getFontResolver().addFont("public/fonts/text/SantanderTextW05-Bold.ttf", BaseFont.IDENTITY_H,BaseFont.EMBEDDED);
+			renderer.getFontResolver().addFont("public/fonts/text/SantanderTextW05-BoldItalic.ttf", BaseFont.IDENTITY_H,BaseFont.EMBEDDED);
+			renderer.getFontResolver().addFont("public/fonts/text/SantanderTextW05-Italic.ttf", BaseFont.IDENTITY_H,BaseFont.EMBEDDED);
+			renderer.getFontResolver().addFont("public/fonts/text/SantanderTextW05-Light.ttf", BaseFont.IDENTITY_H,BaseFont.EMBEDDED);
+			renderer.getFontResolver().addFont("public/fonts/text/SantanderTextW05-LightIt.ttf", BaseFont.IDENTITY_H,BaseFont.EMBEDDED);
+			renderer.getFontResolver().addFont("public/fonts/text/SantanderTextW05-Regular.ttf", BaseFont.IDENTITY_H,BaseFont.EMBEDDED);
 			renderer.layout();
 			renderer.createPDF(bos, false);
 			renderer.finishPDF();

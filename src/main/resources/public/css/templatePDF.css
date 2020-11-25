@@ -75,12 +75,15 @@ img.qr-codigo {
 }
 
 .title-boxes td{
-	padding: 30px 15px 15px 15px;
+	padding: 18px 24px 8px 24px;
 }
 
 .title-boxes td p{
 	margin:0;
-	font-weight: bold;
+	font-family: 'SantanderTextW05-Bold';
+	font-size: 12px;
+	line-height: 20px;
+	color: #25303b;
 }
 
 .boxes.gray-background {
@@ -94,14 +97,38 @@ img.qr-codigo {
 .boxes td p {
 	margin: 0;
 }
+.boxes img {
+	margin-right: 6px;
+	width: 22px;
+	padding-bottom: 6px;
+	margin-bottom: -11px;
+}
 
 .boxes .key {
-	color: #b1b1b1;
-	margin-bottom: 5px;
+	color: #6f7779;
+	margin-bottom: 4px;
+	font-size: 12px;
+	font-family: 'SantanderTextW05-Regular';
+	line-height: 20px;
 }
 .boxes .value {
-	font-weight: bold;
+	font-family: 'SantanderTextW05-Bold';
+	font-size: 12px;
+	line-height: 15.8px;
+	color: #25303b;
 }
 .boxes .sub-value {
 	margin-top: 5px;
+	font-size:11px;
+	line-height: 16px;
+	font-family: 'SantanderTextW05-Italic';
+	color: #444;
+}
+
+.tabla-pie {
+	font-family: 'SantanderTextW05-Regular';
+ 	font-size: 10px;
+  	line-height: 16px;
+  	color: #444444;
+  	margin-top: 8px;
 }

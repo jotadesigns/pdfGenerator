@@ -16,6 +16,8 @@ body {
 }
 .tabla tr {
 	width:100%;
+	margin: 0px;
+	padding: 0px;
 }
 
 .header {
@@ -36,35 +38,37 @@ body {
 .qr {	
 	color:#4a4a4a;
 	font-size: 12px;
-	padding:0px 20px 0px 20px;
-	margin:0;
+	margin:0px;
 	text-align: left;
 	background-color: #f4f6f7;
-	padding: 14px 23px 14px 23px;
-	font-family: 'SantanderTextW05-Regular';
+	padding: 0px 0px 0px 23px;	
 }
-.qr strong {
-	font-family: 'SantanderHeadlineW05-Bold';
-}
-
 img.qr-codigo {
 	width: 101px;
 	margin-right: 32px;
 }
+
+.qr tr p.texto {
+	font-weight: 300;	
+	margin-top: 9px;
+
+}
 .codigo {
-	width: 200px;
+	width: 148px;
 	color: #ffffff;
-	padding: 5px 5px 5px 10px;
+	padding: 6px 12px 6px 10px;
+	margin-top: 18px;
 	margin-bottom: 0px;
 	background-color: #000000;
 	word-wrap: break-word;
 	font-family: 'SantanderTextW05-Bold';
 	font-size: 12px;
-	color: red;
 }
-.codigo .bigger {
+p .bigger {
 	font-size: 16px;
+	margin-left: 6px;
 }
+
 
 .tabla {
 	width: 100%;
